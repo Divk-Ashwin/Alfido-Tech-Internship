@@ -1,6 +1,6 @@
 # Network Reconnaissance & Scanning with Nmap
 
-> ** Task: Reconnaissance & Scanning**  
+> **Task: Reconnaissance & Scanning**  
 > A comprehensive study of network enumeration using Nmap against authorized public targets.
 
 [![Nmap Version](https://img.shields.io/badge/Nmap-7.97-blue)](https://nmap.org/)
