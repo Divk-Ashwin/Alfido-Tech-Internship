@@ -23,7 +23,7 @@
 
 | Parameter | Value |
 |-----------|-------|
-| **Scan Date** | 2025-08-08 (IST) |
+| **Scan Date** | 2025-08-08 |
 | **Tool Version** | Nmap 7.97 |
 | **Primary Target** | scanme.nmap.org |
 | **Secondary Target** | example.com |
@@ -54,8 +54,17 @@ reconnaissance-scanning/
 │   └── 2025-08-08_nmap_scanme_T4.txt
 ├── README.md
 ├── .gitignore
-└── LICENSE
 ```
+
+## What I Learned
+- Started with fast scans (-sn, -F) to map hosts/ports, then used deeper scans (-sV, -A) for details.
+- Read port states accurately: open vs closed vs filtered vs tcpwrapped, and chose next steps accordingly.
+- Recognized limits of version detection; validated banners with multiple probes when needed.
+- Treated OS detection (-O/-A) as heuristic due to hop distance and filtering; avoided overconfidence.
+- Used traceroute to understand network path/latency and identify CDN/backbone hops.
+- Kept outputs organized (-oN + clear filenames in reports/) for transparency and reproducibility.
+- Followed ethical scope: scanned only approved targets and used safe NSE scripts.
+
 
 ---
 
@@ -323,7 +332,6 @@ nmap -T4 scanme.nmap.org
 ### 🌐 **Network Characteristics**
 - **Latency**: 250-280ms average
 - **Path**: India → NTT Backbone → Akamai → Linode datacenter
-- **IPv6**: Available but not scanned (2600:3c01::f03c:91ff:fe18:bb2f)
 
 ---
 
@@ -417,18 +425,4 @@ nmap --script=discovery scanme.nmap.org
 - [OS Detection Methods](https://nmap.org/book/osdetect.html)
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👤 Author
-
-**Cybersecurity Intern**  
-*Network Reconnaissance & Scanning Task - August 2025*
-
----
-
 > **Note**: This documentation represents educational reconnaissance activities performed on authorized public targets. All scanning was conducted ethically and within legal boundaries.
