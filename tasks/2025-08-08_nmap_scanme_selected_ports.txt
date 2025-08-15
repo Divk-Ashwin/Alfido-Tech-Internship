@@ -1,0 +1,15 @@
+C:\Users\acer>nmap -p 22,80,443 scanme.nmap.org
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-08-08 19:32 +0530
+Stats: 0:00:00 elapsed; 0 hosts completed (0 up), 0 undergoing Host Discovery
+Parallel DNS resolution of 1 host. Timing: About 0.00% done
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.26s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+
+PORT    STATE  SERVICE
+22/tcp  open   ssh
+80/tcp  open   http
+443/tcp closed https
+
+Nmap done: 1 IP address (1 host up) scanned in 0.71 seconds
+

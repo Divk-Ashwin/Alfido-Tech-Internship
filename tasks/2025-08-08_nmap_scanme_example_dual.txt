@@ -1,0 +1,36 @@
+C:\Users\acer>nmap scanme.nmap.org example.com
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-08-08 19:21 +0530
+Stats: 0:00:00 elapsed; 0 hosts completed (0 up), 0 undergoing Host Discovery
+Parallel DNS resolution of 2 hosts. Timing: About 0.00% done
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.25s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+Not shown: 987 closed tcp ports (reset)
+PORT      STATE    SERVICE
+21/tcp    open     ftp
+22/tcp    open     ssh
+25/tcp    filtered smtp
+80/tcp    open     http
+135/tcp   filtered msrpc
+139/tcp   filtered netbios-ssn
+179/tcp   filtered bgp
+445/tcp   filtered microsoft-ds
+554/tcp   open     rtsp
+646/tcp   filtered ldp
+1723/tcp  open     pptp
+9929/tcp  open     nping-echo
+31337/tcp open     Elite
+
+Nmap scan report for example.com (23.215.0.136)
+Host is up (0.034s latency).
+Other addresses for example.com (not scanned): 2600:1406:3a00:21::173e:2e66 2600:1406:bc00:53::b81e:94c8 2600:1406:bc00:53::b81e:94ce 2600:1408:ec00:36::1736:7f24 2600:1408:ec00:36::1736:7f31 2600:1406:3a00:21::173e:2e65 23.215.0.138 96.7.128.175 96.7.128.198 23.192.228.80 23.192.228.84
+rDNS record for 23.215.0.136: a23-215-0-136.deploy.static.akamaitechnologies.com
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+443/tcp  open  https
+554/tcp  open  rtsp
+1723/tcp open  pptp
+
+Nmap done: 2 IP addresses (2 hosts up) scanned in 21.31 seconds
